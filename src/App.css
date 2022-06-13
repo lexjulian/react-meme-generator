@@ -13,9 +13,14 @@ html {
   box-sizing: border-box;
 }
 
+@media only screen and (max-width: 1200px) {
+  .App {
+    max-width: 100rem;
+  }
+}
+
 .App {
   max-width: 120rem;
-  margin: 0 auto;
 }
 
 .App-header {
@@ -27,6 +32,23 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media only screen and (max-width: 1200px) {
+  .App-header {
+    padding: 0 10rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .App-header {
+    padding: 0 5rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .App-header {
+    padding: 0 1rem;
+  }
 }
 
 .header-col {
@@ -42,6 +64,11 @@ html {
   font-weight: 700;
 }
 
+@media only screen and (max-width: 700px) {
+  .App-header__logo {
+    height: 40px;
+  }
+}
 .App-meme__container {
   display: flex;
   justify-content: center;
@@ -54,6 +81,7 @@ html {
   display: flex;
   gap: 2rem;
 }
+
 .meme-form {
   display: flex;
   flex-direction: column;
@@ -68,6 +96,13 @@ html {
   font-family: inherit;
   letter-spacing: 0.2rem;
   font-weight: 400;
+}
+
+@media only screen and (max-width: 900px) {
+  .meme-input__box > * {
+    width: 15rem;
+    height: 2.5rem;
+  }
 }
 
 .meme-input__box > *:focus {
@@ -91,11 +126,87 @@ html {
 
 .meme-image__box {
   margin-top: 5rem;
-  padding: 20px;
+  /* padding: 20px; */
+  position: relative;
 }
 
 .meme-image {
   height: 500px;
-  border-radius: 5px;
+
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.3);
+  max-width: 100%;
+  border-radius: 3px;
+}
+
+.meme--text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+    2px 2px 5px #000;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.top {
+  top: 0;
+}
+
+@media only screen and (max-width: 400px) {
+  .App-header {
+  }
+
+  .App-header__title {
+    font-size: 35px;
+  }
+  .App-header__secondary {
+    display: none;
+  }
+
+  .meme-input__box {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .meme-button {
+    padding: 20px;
+  }
+
+  .meme-image__box {
+    margin-top: 1.5rem;
+    padding: 20px;
+    position: relative;
+  }
+
+  .meme-image {
+    height: 400px;
+    max-width: 100%;
+    border-radius: 3px;
+  }
+
+  .meme--text {
+    margin: 35px 0;
+  }
+
+  .bottom {
+    bottom: 0;
+  }
+
+  .top {
+    top: 0;
+  }
 }

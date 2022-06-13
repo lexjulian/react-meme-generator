@@ -2,9 +2,11 @@
 # Meme Generator
 ---
 
--
--
--
+-Event listeners
+-more useState()
+-conditional rendering
+-forms
+-basic useEffect()
 
 ---
 
@@ -13,8 +15,6 @@
 ####
 
 - ###### deployed with Netlify :fire:
-  :exclamation:
-- ###### still ongoing
 
 ---
 
