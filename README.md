@@ -2,11 +2,11 @@
 # Meme Generator
 ---
 
--Event listeners
--more useState()
--conditional rendering
--forms
--basic useEffect()
+- Event listeners
+- more useState()
+- conditional rendering
+- forms
+- basic useEffect()
 
 ---
 
